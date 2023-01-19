@@ -1,26 +1,26 @@
 /* 1.Напишите программу на Java, чтобы проверить,
  являются ли две данные строки вращением друг друга.*/
-
-public class Sem2 {
-    public static void main(String[] args) {
+//
+//public class Sem2 {
+//    public static void main(String[] args) {
 ////        StringBuilder sb = new StringBuilder("Hello World!");
 //        StringBuilder sb = new StringBuilder();
-//        sb.append("Hello World!");
+//        sb.append("Hello World!");//добавление в конец текста
 //        sb.append(")");
 //
-////        sb.reverse();
-////        sb.delete(2, sb.length()-2);
-//        sb.insert(sb.length()/2, "to the ");
-//        sb.deleteCharAt(12)
+////        sb.reverse(); //разворот
+////        sb.delete(2, sb.length()-2);//удаление диапозона
+//        sb.insert(sb.length()/2, "to the ");//вставка в строку(куда, что)
+//        sb.deleteCharAt(12);//удаление символа(индекс символа, который надо удалить)
 //        String s;
 //
 //        System.out.println(sb); // вывод sb
 //        System.out.println(sb.indexOf("Wo")); // поиск индекса символа "Wo "с начала строки
 //        System.out.println(sb.lastIndexOf("Wo")); // поиск индекса с конца сторки
-//        double begin = System.currentTimeMillis();
+//        double begin = System.currentTimeMillis(); // возвращает целое число в формате double - кол-во мс
 //        String str ="";
 //        for (int i = 0; i < 2000; i++) {
-//            str +=Character.getName(i);
+//            str +=Character.getName(i); // возвращает название char
 //        }
 //        System.out.println(System.currentTimeMillis()- begin);
 //
@@ -30,23 +30,23 @@ public class Sem2 {
 //            stringBuilder.append(Character.getName(i));
 //        }
 //        System.out.println(System.currentTimeMillis() - begin);
-
-        String s1 = "Hello world";
-        String s2 = "ldHell";
-        System.out.printf("\"%s\", \"%s\" -> %s вращением друг друга\n", s1,s2,
-                checkRotation(s1,s2)? "являются": "не являются");
-    }
-    public static boolean checkRotation(String s1, String s2) {
-        return (s1 + s1).contains(s2);
-    }
-
-    //Напишите программу на Java, чтобы перевернуть строку с помощью рекурсии.
-        System.stringReverse("hello world"));
-    public static String stringReverse(String st){
-        if(st.length()==1){
-            return st;
-        }
-        return st.substring(st.length()-1) + stringReverse(st.substring(0,st.length()-1));
-    }
-
-}
+//
+//        String s1 = "Hello world";
+//        String s2 = "ldHell";
+//        System.out.printf("\"%s\", \"%s\" -> %s вращением друг друга\n", s1,s2,
+//                checkRotation(s1,s2)? "являются": "не являются");
+//    }
+//    public static boolean checkRotation(String s1, String s2) {
+//        return (s1 + s1).contains(s2);
+//    }
+//
+//    //Напишите программу на Java, чтобы перевернуть строку с помощью рекурсии.
+//        System.stringReverse("hello world"));
+//    public static String stringReverse(String st){
+//        if(st.length()==1){
+//            return st;
+//        }
+//        return st.substring(st.length()-1) + stringReverse(st.substring(0,st.length()-1));
+//    }
+//
+//}
